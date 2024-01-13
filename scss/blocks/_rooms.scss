@@ -1,6 +1,6 @@
 .rooms {
   padding-block: 70px;
-    overflow-x: hidden;
+    overflow-x: scroll;
 
   @include media() {
     padding-top: 70px;
