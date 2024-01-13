@@ -1,0 +1,114 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: transparent;
+  padding-top: 55px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  @include media() {
+    display: none;
+  }
+}
+
+.logo-white {
+  display: none;
+
+  @include media() {
+    display: block;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.3s ease;
+
+  @include media(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    padding-bottom: 25vh;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-100%);
+  }
+}
+
+.nav__list-item {
+  display: block;
+}
+
+.nav__list-item a {
+  text-decoration: none;
+  color: $brown;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.massage_icon {
+  @include media() {
+    display: none;
+  }
+}
+// .massage__content {
+//   position: relative;
+// }
+
+// .massage__btn {
+//   position: absolute;
+//   top: 0;
+//   left: 670px;
+//   width: 50px;
+//   height: 50px;
+//   background-image: url(../../images/icon_massage.svg);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center;
+// }
+
+// .white-logo img {
+//   display: none;
+// }
+
+#menuOpener {
+  visibility: hidden;
+}
+
+#menuOpener:checked + .nav__list {
+  transform: translateX(0);
+}
+
+label[for="menuOpener"] {
+  display: none;
+  width: 24px;
+  height: 12px;
+  background-image: url(../images/icon_menu.svg);
+  background-size: contain;
+
+  @include media() {
+    display: block;
+  }
+}
+

@@ -8,10 +8,16 @@
 
 body {
     font-family: "Varta";
+    font-weight: 300;
 }
 
 .container {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
+
+    @include media() {
+        padding: 0 32px;
+    }
 }
+

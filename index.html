@@ -1,19 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Antic</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header  -->
     <header class="header">
-        <div class="container header__wrapper">
-            <a class="logo" href="index.html">
-                <img src="./images/logo.svg" alt="logojon">
-            </a>
-            
+      <div class="container header__wrapper">
+        <div class="nav">
+          <a class="nav__logo" href="index.html">
+            <img class="logo" src="./images/logo.svg" alt="logojon" />
+            <img
+              class="logo-white"
+              src="./images/white-logo.svg"
+              alt="white-logojon" />
+          </a>
+
+          <input type="checkbox" id="menuOpener" />
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="#">Products</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#">Rooms</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#">Services</a>
+            </li>
+            <li class="nav__list-item">
+              <a href="#">Inspirations</a>
+            </li>
+          </ul>
         </div>
+        <label class="menuOpenerBtn" for="menuOpener"></label>
+        <a class="massage_icon" href="massage.html">
+          <img src="./images/icon_massage.svg" alt="massage" />
+        </a>
+      </div>
     </header>
-</body>
+    <!-- End of Header  -->
+
+    <!-- Hero section  -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <span>HOME DESIGN</span>
+          <h2>Elegance for Interiors & Exteriors</h2>
+          <p>We provide everyone with modern, trendy, quality furniture</p>
+          <a href="#findRoom" class="scrollDownBtn"></a>
+        </div>
+        <div class="hero__bg"></div>
+      </div>
+    </section>
+    <!-- End of Hero section  -->
+    <!-- Find section -->
+    <section class="find">
+      <div class="container find__wrapper">
+        <h2>Find your room</h2>
+        <div class="find__content">
+          <p>Dining room, bedroom, bathroom or office. Find what you need</p>
+          <ul class="find__list">
+            <li class="find__list-item">
+              <div class="find__list-item__content">
+                <img src="./images/find_bg_one.png" alt="bg" />
+                <p>New arrivals</p>
+              </div>
+              <h3>Bedroom</h3>
+            </li>
+            <li class="find__list-item">
+              <div class="find__list-item__content">
+                <img class="find_img" src="./images/find_bg_two.png" alt="bg" />
+                <p>New arrivals</p>
+              </div>
+              <h3>Living room</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="carusel">
+          <p>01 / 05</p>
+          <a href="#">Next</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Find section -->
+    <!-- Services -->
+    <section class="services">
+      <div class="container services__wrapper">
+        <div class="services__content">
+          <h2>We stay by your side to design your projects</h2>
+          <a href="#">Find out more</a>
+        </div>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <h2>Our Advices</h2>
+            <p>
+              What if you took advantage of this rather special period to
+              rethink your interior? You spend more time at home so you might as
+              well feel good there.
+            </p>
+          </li>
+          <li class="services__list-item">
+            <h2>Click and Collect</h2>
+            <p>
+              Adapted and contactless. Free from € 200 of purchases in stores
+              offering the service.
+            </p>
+          </li>
+          <li class="services__list-item">
+            <h2>Conception Service</h2>
+            <p>
+              Personalized service with an expert advisor for your interior and
+              exterior decoration or layout projects.
+            </p>
+          </li>
+          <li class="services__list-item">
+            <h2>Installation Service</h2>
+            <p>
+              Our furniture packaged in flat packs are designed for easy
+              assembly. But you can call on our partner.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End of Services -->
+    <!-- Rooms -->
+    <section class="rooms">
+      <div class="container rooms__warpper">
+        <div class="subscribe">
+          <div class="subscribe__content">
+            <h2>Be aware of the latest trends</h2>
+            <p>Stay informed of new trends, but also of our various offers.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <form action="#">
+            <div class="form-box">
+              <input
+                type="text"
+                name="EmailAddress"
+                placeholder="email@address.com" />
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="silder">
+          <ul class="rooms__list">
+            <li class="rooms__list-item">
+              <img src="./images/rooms_bg_1.png" alt="room" />
+            </li>
+            <li class="rooms__list-item">
+              <img src="./images/rooms_bg_2.png" alt="room" />
+            </li>
+            <li class="rooms__list-item">
+              <img src="./images/rooms_bg_3.png" alt="room" />
+            </li>
+            <li class="rooms__list-item">
+              <img src="./images/rooms_bg_4.png" alt="room" />
+            </li>
+          </ul>
+
+          <div class="rooms__content">
+            <h3>Inspirations</h3>
+            <p>
+              Our experts are keen to stay on top of trends in order to offer
+              you new inspirations for your interior and exterior every day.
+              Remember that to inspire you we have to inspire ourselves and we
+              want to share that with you.
+            </p>
+            <div class="carusel_rooms">
+              <div class="carusel_rooms_btn">
+                <a href="#" class="carusel__left"></a>
+                <a href="#" class="carusel__right"></a>
+              </div>
+              <span>01/05</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Rooms -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <a class="footer_logo" href="#">
+            <img src="./images/footer_logo.svg" alt="logo" />
+          </a>
+          <div class="footer__content">
+            <ul class="footer__list">
+              <h4>Products</h4>
+              <li class="footer__list-item">
+                <a href="#">Furniture</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Decoration</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Storage</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Baby and child</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Connected home</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <h4>Rooms</h4>
+              <li class="footer__list-item">
+                <a href="#">Living room</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Dining room</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Cooked</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Bedroom</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Bathroom</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Office</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Laundry</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Garage</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <h4>Services</h4>
+              <li class="footer__list-item">
+                <a href="#">Click and collect</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Conception</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Installation</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Advices</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Gift card</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <h4>About</h4>
+              <li class="footer__list-item">
+                <a href="#">Our story</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Our stores</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#">Our partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-inner">
+            <h4>We respect our planet</h4>
+            <span class="footer__list-item-bg"></span>
+            <p>
+              We’re taking positive steps to reduce our impact on the planet.
+              For us, that means retailing responsibly.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="social_network">
+            <div class="facebook"></div>
+            <div class="twitter"></div>
+            <div class="link"></div>
+            <div class="instagram"></div>
+          </div>
+          <div class="footer__bottom_content">
+            <p class="footer__bottom_content_text">© 2021 Agence Dnd</p>
+            <div class="footer__bottom_content-text">
+              <p>Privacy policy</p>
+              <p>Term of service</p>
+              <p>Language</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

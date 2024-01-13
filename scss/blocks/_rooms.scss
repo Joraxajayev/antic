@@ -1,0 +1,320 @@
+.rooms {
+  padding-block: 70px;
+    overflow-x: hidden;
+
+  @include media() {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+}
+
+.rooms__warpper {
+}
+
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+
+  @include media() {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.subscribe__content h2 {
+  color: $text-black;
+  font-family: "Merriweather";
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.3px;
+}
+
+.subscribe__content p {
+  padding: 15px 0 10px;
+  color: $light-opacty-brown;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.subscribe__content a {
+  text-decoration: none;
+  color: $lightbrown;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  position: relative;
+}
+
+.subscribe__content a::after {
+  content: "";
+  position: absolute;
+  top: 6.5px;
+  right: -16px;
+  width: 13px;
+  height: 10px;
+  background-image: url(../../images/icon_carusel_Right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.silder {
+  padding-top: 550px;
+  position: relative;
+
+  @include media() {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.form-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include media() {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.form-box input {
+  border: none;
+  outline: none;
+  padding: 15px 100px 10px 15px;
+  border: 1px solid #f3eee84d;
+  border-radius: 1px;
+  background: #f3eee84d;
+}
+
+.form-box input::placeholder {
+  display: block;
+  color: $light-opacty-brown;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.form-box button {
+  padding: 8px 30px;
+  border: 1px solid #534b42;
+  border: none;
+  border-radius: 1px;
+  background: #534b42;
+  cursor: pointer;
+  color: var(--OnColor-Primary, #fff);
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  transition: all 0.5s ease;
+}
+
+.form-box button:hover {
+  border: 1px solid #534b42;
+  color: #534b42;
+  background: transparent;
+}
+
+.rooms__list {
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+  @include media() {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.rooms__list-item:nth-child(1) img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+
+  @include mobile() {
+    height: 175px;
+    width: 145px;
+    top: 0;
+    left: 0;
+  }
+
+
+  @include tablet() {
+    height: 250px;
+    width: 350px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.rooms__list-item:nth-child(2) img {
+  position: absolute;
+  top: 0;
+  left: 480px;
+  width: 40%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+
+  @include mobile() {
+    height: 175px;
+    width: 145px;
+    top: 0;
+    left: 160px;
+  }
+
+
+  @include tablet() {
+    height: 250px;
+    width: 350px;
+    top: 0;
+    left: 360px;
+    object-position: center;
+  }
+}
+
+.rooms__list-item:nth-child(3) img {
+  position: absolute;
+  top: 0;
+  left: 960px;
+  width: 40%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+
+  @include mobile() {
+    height: 175px;
+    width: 145px;
+    top: 195px;
+    left: 0px;
+  }
+
+
+  @include tablet() {
+    height: 250px;
+    width: 350px;
+    top: 270px;
+    left: 0px;
+  }
+}
+
+.rooms__list-item:nth-child(4) img {
+  position: absolute;
+  top: 0;
+  left: 1430px;
+  width: 40%;
+  height: 550px;
+  object-fit: cover;
+  object-position: center;
+
+  @include mobile() {
+    height: 175px;
+    width: 145px;
+    top: 195px;
+    left: 160px;
+  }
+
+
+  @include tablet() {
+    height: 250px;
+    width: 350px;
+    top: 270px;
+    left: 360px;
+  }
+}
+
+.rooms__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  @include mobile() {
+    flex-direction: column;
+    margin-top: 400px;
+  }
+
+  @include tablet() {
+    flex-direction: column;
+    margin-top: 600px;
+  }
+}
+
+.rooms__content h3 {
+  color: $dark-brown;
+  font-family: "Merriweather";
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.3px;
+}
+
+.rooms__content p {
+  max-width: 359px;
+  color: $brown;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+
+  @include media() {
+    max-width: 311px;
+    padding-top: 20px;
+  }
+}
+
+.carusel_rooms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carusel_rooms span {
+  color: $light-opacty-brown;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.carusel_rooms_btn {
+  display: flex;
+  gap: 11px;
+}
+
+.carusel__left {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/icon_left_btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.carusel__right {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/icon_right_btn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

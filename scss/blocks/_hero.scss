@@ -1,0 +1,95 @@
+.hero {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #F3EEE8;
+
+    @include media() {
+        z-index: -1;
+    }
+}
+
+.hero__content {
+    padding-block: 215px;
+
+    @include media() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero__content span {
+    color: $lightbrown;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 1px; 
+    
+    @include media() {
+        color: $white;
+        display: block;
+        text-align: center;
+    }
+}
+
+.hero__content h2 {
+    margin: 50px 0 30px;
+    max-width: 420px;
+    color: $lightbrown;
+    font-family: "Merriweather";
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 70px;
+    letter-spacing: -0.4px;  
+    
+    @include media() {
+        color: $white;
+        text-align: center;
+    }
+}
+
+.hero__content p {
+    max-width: 380px;
+    color: $light-opacty-brown;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30.8px;
+
+    @include media() {
+        color: $white;
+        text-align: center;
+    }
+}
+
+.scrollDownBtn {
+    margin-top: 48px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/icon_scrollDown.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+    
+    @include media() {
+        background-image: url(../../images/icon_white-scrollDownl.svg);
+    }
+}
+
+.hero__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/hero__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media() {
+        width: 100%;
+        z-index: -1;
+    }
+}

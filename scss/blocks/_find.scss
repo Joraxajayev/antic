@@ -1,0 +1,181 @@
+.find {
+    padding-top: 64px;
+    padding-bottom: 132px;
+    background: #F3EEE8;
+
+    @include media() {
+        padding-block: 48px;
+    }
+}
+
+.find__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 48px;
+
+    @include mobile() {
+        gap: 20px;
+    }
+
+    @include tablet() {
+        gap: 20px;
+    }
+}
+
+.find__wrapper h2 {
+    color: $brown;
+    font-family: "Merriweather";
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: -0.6px;
+
+    @include mobile() {
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 40px;
+        letter-spacing: -0.3px;
+    }
+
+    @include tablet() {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.find__content {
+    display: flex;
+    gap: 24px;
+
+    @include mobile() {
+        flex-direction: column;
+        gap: 33px;
+    }
+
+    @include tablet() {
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.find__content p {
+    max-width: 165px;
+    color: $light-opacty-brown;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    
+    @include mobile() {
+        max-width: 80vw;
+    }
+}
+
+.find__list {
+    list-style: none;
+    display: flex;
+}
+
+.find__list-item {
+    width: 458px;
+    display: flex;
+    position: relative;
+
+    @include mobile() {
+        width: 80vw;
+    }
+}
+
+.find__list-item:nth-child(2) {
+    @include media() {
+        display: none;
+    }
+}
+
+.find__list-item__content {
+    display: flex;
+    gap: 32px;
+}
+
+.find__list-item p {
+    color: $brown;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.find__list-item h3 {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $lightbrown;
+    text-align: center;
+    font-family: "Merriweather";
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: -0.6px; 
+    
+    @include mobile() {
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 40px;
+        letter-spacing: -0.3px;        
+    }
+}
+
+.find__list-item .find__list-item__content img {
+    max-width: 60%;
+
+    @include mobile() {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.carusel {
+    display: flex;
+    gap: 145px;
+
+    @include mobile() {
+        flex-direction: row-reverse;
+        gap: 195px;
+    }
+
+    @include tablet() {
+        margin: 0 auto;
+        padding-right: 36px;
+        gap: 135px;
+    }
+}
+
+.carusel p {
+    color: $light-opacty-brown;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;   
+}
+
+.carusel a {
+    position: relative;
+    text-decoration: none;
+    color: $lightbrown;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;    
+}
+
+.carusel a::before {
+    content: "";
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    right: -20px;
+    background-image: url(../../images/icon_carusel_Right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

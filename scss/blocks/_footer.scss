@@ -1,0 +1,216 @@
+.footer {
+    padding-block: 70px;
+    background: $bg-color;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include media() {
+        flex-direction: column;
+    }
+}
+
+.footer_logo {
+    padding-bottom: 10px;
+
+    @include tablet() {
+        margin: 0 auto;
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+
+    @include mobile() {
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    @include tablet() {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__list {
+    list-style: none;
+    // gap: 24px;
+}
+
+.footer__list h4 {
+    padding-bottom: 24px;
+    color: $dark-brown;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px; 
+    
+    @include media() {
+        padding-bottom: 10px;
+    }
+}
+
+.footer__list-item {
+    padding-bottom: 12px;
+    
+}
+
+.footer__list-item a {
+    text-decoration: none;
+    color: $brown;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */    
+}
+
+.footer__content-inner {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    gap: 15px;
+
+    @include media() {
+        padding-top: 40px;
+    }
+
+    @include tablet() {
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.footer__content-inner h4 {
+    color: $dark-brown;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px;    
+}
+
+.footer__content-inner p {
+    max-width: 235px;
+    color: $brown;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;   
+}
+
+.footer__list-item-bg {
+    max-width: 242px;
+    height: 182px;    
+    background-image: url(../../images/footer__content.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.footer__content-inner a {
+    text-decoration: none;
+    color: $lightbrown;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    position: relative;     
+}
+
+.footer__content-inner a::after {
+    content: "";
+    position: absolute;
+    top: 6.5px;
+    // right: -1px;
+    left: 90px;
+    width: 13px;
+    height: 10px;   
+    background-image: url(../../images/icon_carusel_Right.svg); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+
+.footer__bottom {
+    margin-top: 48px;
+}
+
+.social_network {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+    @include media() {
+        padding-bottom: 40px;
+    }
+}
+
+.facebook {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/Facebook.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.twitter {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/Twitter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+.link {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/Linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+.instagram {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../images/Instagram.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+
+.footer__bottom_content {
+    display: flex;
+    justify-content: space-between;
+
+    @include media() {
+        flex-direction: column-reverse;
+    }
+}
+
+.footer__bottom_content_text {
+    @include media() {
+        padding-top: 32px;
+    }
+}
+
+.footer__bottom_content p {
+    color: $light-opacty-brown;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;  
+    
+}
+
+.footer__bottom_content-text {
+    display: flex;
+    gap: 30px;
+
+    @include media() {
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 10px;
+    }
+}
